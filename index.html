@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Smart Home</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>SMART HOME</h1>
+		<h4>Welcome to your smart home control panel!</h4>
+	</header>
+	<nav>
+		<a href="#home">HOME</a>
+		<a href="#livingRoom">LIVING ROOM</a>
+		<a href="#kitchen">KITCHEN</a>
+		<a href="#bedroom">BEDROOM</a>
+		<a href="#garden">GARDEN</a>
+		<a href="#notifications">Notifications</a>
+	</nav>
+	<main id="smartHome">
+		<div class="rooms">
+			<section class="room" id="livingRoom">
+				<h3>Living Room</h3>
+				<div class="sensor">
+					<h4>Movement</h4>
+					<input type="text" value="Motion detected" readonly>
+					<button>ON</button>
+				</div>
+				<div class="sensor">
+					<h4>Light Sensor</h4>
+					<input type="range" min="0" max="100" value="60">
+					<p>Light Level: 60%</p>
+					<button>ON</button>
+				</div>
+				<div class="sensor">
+					<h4>Smoke detector</h4>
+					<span>No smoke detected.</span>
+					<button>ON</button>
+				</div>
+			</section>
+			<section class="room" id="kitchen">
+				<h3>Kitchen</h3>
+				<div class="sensor">
+					<h4>Smoke detector</h4>
+					<span>No smoke detected.</span>
+					<button>ON</button>
+				</div>
+				<div class="sensor">
+					<h4>Gas detector</h4>
+					<span>No gas detected.</span>
+					<button>ON</button>
+				</div>
+				<div class="sensor">
+					<h3>Temperature</h3>
+					<output>24°C</output>
+					<button>ON</button>
+				</div>
+			</section>
+			<section class="room" id="bedroom">
+				<h3>Bedroom</h3>
+				<div class="sensor">
+					<h4>Movement</h4>
+					<input type="text" value="Motion detected" readonly>
+					<button>ON</button>
+				</div>
+				<div class="sensor">
+					<h4>Light Sensor</h4>
+					<input type="range" min="0" max="100" value="60">
+					<p>Light Level: 60%</p>
+					<button>ON</button>
+				</div>
+				<div class="sensor">
+					<h3>Temperature</h3>
+					<output>24°C</output>
+					<button>ON</button>
+				</div>
+			</section>
+			<section class="room" id="garden">
+				<h3>Garden</h3>
+				<div class="sensor">
+					<h4>Movement</h4>
+					<input type="text" value="Motion detected" readonly>
+					<button>ON</button>
+				</div>
+				<div class="sensor">
+					<h4>Light Sensor</h4>
+					<input type="range" min="0" max="100" value="60">
+					<p>Light Level: 60%</p>
+					<button>ON</button>
+				</div>
+				<div class="sensor">
+					<h4>Rain Sensor</h4>
+					<h5>No rain detected.</h5>
+					<button>ON</button>
+				</div>
+			</section>
+		</div>
+		<section class="notifications" id="notifications">
+			<h3>Notifications</h3>
+			<details open>
+				<summary>High Temperature - Living Room</summary>
+				<p>Current Temperature: 27°C</p>
+				<p>Allowed range: 20°C - 24°C</p>
+				<p class="warning">Warning! Temperature is too high.</p>
+			</details>
+			<details>
+				<summary>Normal Temperature - Bedroom</summary>
+				<p>Current Temperature: 20°C</p>
+				<p>Allowed range: 18°C - 22°C</p>
+				<p class="warning">Everything is okay.</p>
+			</details>
+		</section>
+	</main>
+	<footer>Smart Home Dashboard</footer>
+</body>
+</html>

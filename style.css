@@ -1,0 +1,140 @@
+body{
+    font-style: italic;
+    background: #5F9EA0;
+}
+header{
+    background: 9932CC;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+nav{
+    background: #172554;
+    padding: 20px;
+    text-align: center;
+}
+nav a{
+    color: white;
+    text-decoration: italic;
+    margin: 15px;
+    font-weight: bold;
+}
+nav a:hover{
+    color: gray;
+}
+main{
+    padding: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+h2{
+    color: #172554;
+}
+.rooms{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.room{
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px #00000015;
+}
+.sensor{
+    background: #f8fafc;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+.sensor h3{
+    margin-top: 5px;
+}
+.sensor progress, .sensor meter{
+    width: 100%;
+}
+.status{
+    color: green;
+    font-weight: bold;
+}
+.warning{
+    color: red;
+    font-weight: bold;
+}
+.notifications{
+    margin-top: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+details{
+    background: #f1f5f9;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+summary{
+    cursor: pointer;
+    font-weight: bold;
+}
+footer{
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+input{
+    padding: 10px;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    background: white;
+    color: #1e293b;
+    outline: none;
+}
+button{
+    background-color: #22c55e;
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.sensor input{
+    width: 80%;
+    height: 8px;
+    border-radius: 10px;
+    background: #cbd5e1;
+    outline: none;
+    cursor: pointer;
+    accent-color: green;
+    margin: 15px 0;
+}
+section:target{
+    border: 2px solid #38bdf8;
+    box-shadow: 0 0 15px #38bdf8;
+    background-color: #eff6ff;
+    transform: scale(1.01);
+    transition: 0.3s;
+}
+#bedroom{
+    background-color: #FCE7F3;
+}
+#livingRoom{
+    background-color: #EDE9FE;
+}
+#kitchen{
+    background-color: #fffedd5;
+}
+#garden{
+    background-color: #dcfce7;
+}
+#home{
+    background-color: #f1f5f9;
+}
+#notifications{
+    background-color: #fff7ed;
+}
